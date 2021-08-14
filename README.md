@@ -13,7 +13,7 @@ The protocol is intended for use in tasks where high data exchange rates or low 
 ### Protocol description
 After the connection of the underlying protocol is established, data flows in both directions are used independently of each other.
 The protocol has a single packet type consisting of a constant-length header and a variable-length body.
-The header contains a single 32-bit unsigned integer value indicating the length of the body.
+The header contains a single 32-bit unsigned BE integer value indicating the length of the body.
 The protocol does not support PING-PONG packets to support the session, placing this responsibility on the lower or higher protocols.
 ## Русская версия
 ### Назначение протокола
@@ -23,5 +23,5 @@ The protocol does not support PING-PONG packets to support the session, placing 
 ### Описание протокола
 После установки соединения нижележащего протокола, потоки данных в обе стороны используются независимо друг от друга.
 Протокол имеет единственный тип пакета, состоящий из заголовка постоянной длины и тела переменной длины.
-Заголовок содержит единственное 32битное беззнаковое целочисленное значение указывающее на длину тела.
+Заголовок содержит единственное 32битное беззнаковое целочисленное BE значение указывающее на длину тела.
 Протокол не поддерживает PING-PONG пакеты для поддержки сеанса, возлагая эту обязанность на ниже или вышележащие протоколы.
