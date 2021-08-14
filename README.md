@@ -1,10 +1,10 @@
 # SFP
-- English version
-    - Protocol purpose
-    - Protocol description
-- Русская версия
-    - Назначение протокола
-    - Описание протокола
+- [English version](#english-version)  
+    - [Protocol purpose](#protocol-purpose)  
+    - [Protocol description](#protocol-description)  
+- [Русская версия](#русская-версия)  
+    - [Назначение протокола](#назначение-протокола)  
+    - [Описание протокола](#описание-протокола)  
 ## English version
 ### Protocol purpose
 SFP(Simple Frame Protocol) is a session layer protocol designed for transmitting data frames over the transport and application layer stream protocols such as TCP, SSL, QUIC, UNIX DOMAIN SOCKET, etc.
