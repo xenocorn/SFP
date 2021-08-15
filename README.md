@@ -1,4 +1,4 @@
-# SFP
+# SFP v1.0.1
 - [English version](#english-version)  
     - [Protocol purpose](#protocol-purpose)  
     - [Protocol description](#protocol-description)  
