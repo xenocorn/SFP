@@ -1,10 +1,12 @@
-# SFP v1.0.2
+# SFP v1.1.0
 - [English version](#english-version)  
     - [Protocol purpose](#protocol-purpose)  
     - [Protocol description](#protocol-description)  
+    - [Default values](#default-values)  
 - [Русская версия](#русская-версия)  
     - [Назначение протокола](#назначение-протокола)  
     - [Описание протокола](#описание-протокола)  
+    - [Значения по умолчанию](#значения-по-умолчанию)  
 ## English version
 ### Protocol purpose
 SFP(Simple Frame Protocol) is a session layer protocol designed for transmitting data frames over the transport and application layer stream protocols such as TCP, SSL, QUIC, UNIX DOMAIN SOCKET, etc.  
@@ -14,7 +16,9 @@ The protocol is intended for use in tasks where high data exchange rates or low 
 After the connection of the underlying protocol is established, data flows in both directions are used independently of each other.  
 The protocol has a single packet type consisting of a constant-length header and a variable-length body.  
 The header contains a single 32-bit unsigned BE integer value indicating the length of the body.  
-The protocol does not support PING-PONG packets to support the session, placing this responsibility on the lower or higher protocols.  
+The protocol does not support PING-PONG packets to support the session, placing this responsibility on the lower or higher protocols. 
+### Default values
+When using SFP over TCP, port 10000 is used as the default port.   
 ## Русская версия
 ### Назначение протокола
 Протокол сеансового уровня SFP(Simple Frame Protocol) предназначен для передачи кадров данных поверх поточных протоколов транспортного и прикладного уровня таких как TCP, SSL, QUIC, UNIX DOMAIN SOCKET.  
@@ -25,3 +29,5 @@ The protocol does not support PING-PONG packets to support the session, placing 
 Протокол имеет единственный тип пакета, состоящий из заголовка постоянной длины и тела переменной длины.  
 Заголовок содержит единственное 32битное беззнаковое целочисленное BE значение указывающее на длину тела.  
 Протокол не поддерживает PING-PONG пакеты для поддержки сеанса, возлагая эту обязанность на ниже или вышележащие протоколы.  
+### Значения по умолчанию
+При использовании SFP поверх TCP в качестве порта по умочанию используется порт 10000.  
