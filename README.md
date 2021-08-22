@@ -22,7 +22,8 @@ The protocol does not support PING-PONG packets to support the session, placing 
 ### Default values
 When using SFP over TCP, port 10000 is used as the default port.   
 ### Implementations
-[Python](https://github.com/xenocorn/PySFP)
+[Python](https://github.com/xenocorn/PySFP)  
+[Rust](https://github.com/xenocorn/rust_sfp.git)  
 ## Русская версия
 ### Назначение протокола
 Протокол сеансового уровня SFP(Simple Frame Protocol) предназначен для передачи кадров данных поверх поточных протоколов транспортного и прикладного уровня таких как TCP, SSL, QUIC, UNIX DOMAIN SOCKET.  
@@ -36,4 +37,5 @@ When using SFP over TCP, port 10000 is used as the default port.
 ### Значения по умолчанию
 При использовании SFP поверх TCP в качестве порта по умочанию используется порт 10000.  
 ### Реализации
-[Python](https://github.com/xenocorn/PySFP)
+[Python](https://github.com/xenocorn/PySFP)  
+[Rust](https://github.com/xenocorn/rust_sfp.git)  
